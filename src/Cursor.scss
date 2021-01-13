@@ -1,0 +1,23 @@
+.cursor {
+   z-index: 1000000;
+   width: 20px;
+   height: 20px;
+    border-radius: 50%;
+   background-color: rgb(255, 255, 255);
+   //    border: 1px solid $black;
+   pointer-events: none;
+   overflow: hidden;
+   transform: translate3d(0, 0, 0);
+
+   position: fixed;
+   backface-visibility: hidden;
+   transition: transform .4s ease;
+   //    mix-blend-mode: difference;
+   //     transition: all 0.4s ease;
+   //    transition-property: background, transform;
+}
+.link-grow{
+   transform: scale(3.5);
+   background-color: rgb(10, 10, 10);
+
+}
