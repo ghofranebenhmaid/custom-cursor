@@ -1,7 +1,7 @@
 .cursor {
    z-index: 1000000;
-   width: 0px;
-   height: 0px;
+   width: 0;
+   height: 0;
    // border-radius: 50%;
    background-color: transparent;
    //    border: 1px solid $black;
@@ -14,6 +14,8 @@
    //    mix-blend-mode: difference;
    // transition: all 0.4s ease;
    // transition-property: background, transform;
+ 
+
 }
 
 .link-square::after {
@@ -21,6 +23,8 @@
    color: rgb(255, 255, 255);
    padding: 10px 25px;
    background-color: rgb(0, 0, 0);
+
+
 }
 
 .link-rectangle::after {
@@ -52,4 +56,16 @@
    color: rgb(255, 255, 255);
    padding: 10px 25px;
    background-color: rgb(0, 0, 0);
+}
+.link-square,
+.link-rectangle,.link-heart,.link-star,.link-triangle,.link-cercle {
+     animation: mymove 400ms ease-in-out;
+}
+@keyframes mymove {
+   0% {
+      transform: scaleX(0);
+   }
+   100% {
+      transform: scaleX(1);
+   }
 }
